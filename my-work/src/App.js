@@ -17,7 +17,7 @@ function App() {
       }
      
 
-      <PropsInClass/>
+      <PropsInClass name="phyllis" skill="python"/>
      </div>
   );
 }
