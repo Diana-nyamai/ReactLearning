@@ -7,8 +7,8 @@ import Form from './theyinyan/Form';
 function App() {
   return (
     <div className="App">
-      <Form/>
-     <ParentComponent/>
+      
+     
     </div>
   );
 }
