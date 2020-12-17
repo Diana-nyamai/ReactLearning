@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import Increment1 from './components/Increment1';
-import OnClickButton from './components/OnClickButton';
+//import OnClickButton from './components/OnClickButton';
 
 
 function App() {
