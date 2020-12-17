@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class propsInClass extends Component {
+export class PropsInClass extends Component {
     render() {
         return (
             <div>
@@ -10,4 +10,4 @@ export class propsInClass extends Component {
     }
 }
 
-export default propsInClass
+export default PropsInClass
