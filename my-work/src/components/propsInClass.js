@@ -5,7 +5,7 @@ import React, { Component } from 'react'
     render() {
         return (
             <div>
-                <h1>my name is {this.props.name} and skilled in {this</h1>
+                <h1>my name is {this.props.name} and skilled in {this.props.skill}</h1>
             </div>
         )
     }
