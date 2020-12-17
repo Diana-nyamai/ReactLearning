@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Props = props => {
+const Props = ({name, skill}) => {
     return (
         
-        <h1>my name is {props.name} and good at {props.skill}</h1>
+        <h1>my name is {name} and good at {skill}</h1>
         
     )
        
