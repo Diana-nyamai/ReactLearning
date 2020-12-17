@@ -7,10 +7,13 @@ import Increment1 from './components/Increment1';
 function App() {
   return (
     <div className="App">
-      {/*<OnClickButton/>*/
-      
+      {/*<OnClickButton/>
+         <Increment1/>
+        
+        
+         */
       }
-      <Increment1/>
+      
      </div>
   );
 }
