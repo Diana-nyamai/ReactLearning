@@ -8,7 +8,7 @@ export class OnClickButton extends Component {
              message:'welcome Visitor'
         }
     }
-
+//method to handle the click of the button
     changeMessage(){
         this.setState({
             message:'Thank you for subscribing!'
