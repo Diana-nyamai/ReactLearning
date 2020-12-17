@@ -21,6 +21,7 @@ import React, { Component } from 'react'
          this.increment()
          this.increment()
          this.increment()
+         this.increment()
 
      }
      
