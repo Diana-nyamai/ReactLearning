@@ -16,8 +16,10 @@ import React, { Component } from 'react'
     }
 
     incrementFive(){
-        increment()
-        
+       this.increment()
+       this.increment()
+       this.increment()
+       this.increment()
         }
 
     render() {
