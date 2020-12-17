@@ -1,10 +1,12 @@
 import React from 'react'
 
 const Props = props =>{
-    return 
+    return (
         <div>
-            <h1></h1>ch
+        
         </div>
+    )
+       
     
 }
 
