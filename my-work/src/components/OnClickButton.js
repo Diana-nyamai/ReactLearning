@@ -8,12 +8,18 @@ export class OnClickButton extends Component {
              message:'welcome Visitor'
         }
     }
+
+    changeMessage(){
+        this.setState({
+            message:'Thank you for subscribing!'
+        })
+    }
     
     render() {
         return (
             <div>
                 <h1>{this.state.message}</h1>
-                <button>click me</button>
+                <button onClick={() => this.changeMessage()}>click me</button>
             </div>
         )
     }
