@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Increment1 from './components/Increment1';
+//import Increment1 from './components/Increment1';
 import Increment5 from './components/Increment5';
 //import OnClickButton from './components/OnClickButton';
 

@@ -13,7 +13,7 @@ import React, { Component } from 'react'
         return (
             <div>
                 <h1>count is:{this.state.count}</h1>
-                <button>increment</button>
+                <button onClick={()=> this.increment()}>increment</button>
             </div>
         )
     }
