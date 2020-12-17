@@ -10,11 +10,11 @@ function App() {
     <div className="App">
       {/*<OnClickButton/>
          <Increment1/>
-        
+        <Increment5/>
         
          */
       }
-      <Increment5/>
+      
      </div>
   );
 }
