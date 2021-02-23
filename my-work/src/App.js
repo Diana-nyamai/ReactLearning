@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import ButtonON from './components/ButtonON';
 //import Props from './components/Props';
 import  { PropsInClass } from './components/PropsInClass';
 import Timer from './components/Timer';
@@ -18,7 +19,7 @@ function App() {
          */
       }
      <Timer/>
-
+     <ButtonON/>
      
      </div>
   );
