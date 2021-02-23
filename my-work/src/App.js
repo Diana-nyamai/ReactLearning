@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import ButtonON from './components/ButtonON';
+import ConditionalRendering from './components/ConditionalRendering';
 //import Props from './components/Props';
 import  { PropsInClass } from './components/PropsInClass';
 import Timer from './components/Timer';
@@ -20,6 +21,7 @@ function App() {
       }
      <Timer/>
      <ButtonON/>
+     <ConditionalRendering IsLoggedIn ={false}/>
      
      </div>
   );
