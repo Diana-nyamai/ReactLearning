@@ -3,7 +3,7 @@ import './App.css';
 import ButtonON from './components/ButtonON';
 import ConditionalRendering from './components/ConditionalRendering';
 //import Props from './components/Props';
-import  { PropsInClass } from './components/PropsInClass';
+//import  { PropsInClass } from './components/PropsInClass';
 import Timer from './components/Timer';
 //import Increment1 from './components/Increment1';
 //import Increment5 from './components/Increment5';
