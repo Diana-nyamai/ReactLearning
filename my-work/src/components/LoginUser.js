@@ -1,4 +1,18 @@
 import React, { Component } from 'react'
+import ConditionalRendering from './ConditionalRendering'
+import LoginButtons from './LoginButtons'
+
+function LoginButton(props){
+    return <div>
+    <button onClick={props.onClick}>Log IN </button>
+    </div>
+}
+
+function LogoutButton(props){
+    return <div>
+    <button onClick={props.onClick}>Log Out</button>
+    </div>
+}
 
 export class LoginUser extends Component {
     constructor(props) {
@@ -24,9 +38,17 @@ export class LoginUser extends Component {
     }
     render() {
         const isLoggedIn = this.state.isLoggedIn
+        let Button;
+        if(isLoggedIn){
+            Button = <LogoutButton onClick={this.handleLogOut}/>
+        }
+         else{
+             Button = <LoginButton onClick={this.handleLogIn} />
+         }
         return (
             <div>
-                
+                <ConditionalRendering isLoggedIn = {isLoggedIn}/>
+                {Button}
             </div>
         )
     }
