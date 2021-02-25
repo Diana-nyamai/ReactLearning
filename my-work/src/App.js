@@ -8,6 +8,7 @@ import Timer from './components/Timer';
 import Increment1 from './components/Increment1';
 import Increment5 from './components/Increment5';
 import OnClickButton from './components/OnClickButton';
+import LoginUser from './components/LoginUser';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
      <Timer/>
      <ButtonON/>
      <ConditionalRendering IsLoggedIn ={false}/>
+     <LoginUser/>
      
      </div>
   );
