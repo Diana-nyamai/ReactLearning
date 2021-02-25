@@ -22,7 +22,7 @@ function App() {
       
      <Timer/>
      <ButtonON/>
-     <ConditionalRendering isloggedIn={true}/>
+     <ConditionalRendering isloggedIn={false}/>
      <LoginUser/>
      
      </div>
