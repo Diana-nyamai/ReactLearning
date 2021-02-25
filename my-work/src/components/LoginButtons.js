@@ -16,7 +16,8 @@ function LogoutButton(){
 function LoginButtons() {
     return (
         <div>
-            
+            <LoginButton/>
+            <LogoutButton/>
         </div>
     )
 }
