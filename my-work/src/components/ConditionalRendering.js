@@ -1,17 +1,20 @@
 import React from 'react'
-function GreetingOne(props){
+function GreetingOne(){
     return <p>please sign up</p>
 }
-function Greeting2(props){
+function Greeting2(){
     return <p>Welcome back diana</p>
 }
 
 function ConditionalRendering(props) {
-    const IsLoggedIn = props.IsLoggedIn;
-    if(IsLoggedIn){
+    const isLoggedIn = props.isLoggedIn;
+    if(isLoggedIn){
         return <Greeting2/>
     }
-    return <GreetingOne/>
+    else{
+        return <GreetingOne/>
+    }
+    
 
 }
 
