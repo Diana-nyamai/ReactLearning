@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
 import ConditionalRendering from './ConditionalRendering'
-import LoginButtons from './LoginButtons'
+
 
 function LoginButton(props){
     return <div>
-    <button onClick={props.onClick}>Log IN </button>
+    <button onClick={props.onClick}>Log In </button>
     </div>
 }
 
