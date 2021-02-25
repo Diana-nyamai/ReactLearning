@@ -1,14 +1,14 @@
 import React from 'react'
 
-function LoginButton(){
+function LoginButton(props){
     return <div>
-    <button>Log IN </button>
+    <button onClick={props.onClick}>Log IN </button>
     </div>
 }
 
-function LogoutButton(){
+function LogoutButton(props){
     return <div>
-    <button>Log Out</button>
+    <button onClick={props.onClick}>Log Out</button>
     </div>
 }
 
