@@ -1,54 +1,50 @@
 import React, { Component } from 'react'
 import ConditionalRendering from './ConditionalRendering'
 
-
-function LoginButton(props){
-    return <div>
-    <button onClick={props.onClick}>Log In </button>
-    </div>
-}
-
 function LogoutButton(props){
     return <div>
     <button onClick={props.onClick}>Log Out</button>
     </div>
 }
 
+function LogInButton(props){
+    return<div>
+    <button onClick={props.onClick}>Log In</button>
+    </div>
+}
 export class LoginUser extends Component {
     constructor(props) {
         super(props)
     
         this.state = {
-             isLoggedIn: false
+             isloggedIn: false
         }
-        this.handleLogIn = this.handleLogIn.bind(this)
-        this.handleLogOut = this.handleLogOut.bind(this)
+        this.handleLogInClick = this.handleLogInClick.bind(this)
+        this.handleLogOutClick = this.handleLogOutClick.bind(this)
     }
-
-    handleLogIn(){
+    handleLogInClick(){
         this.setState({
-            isLoggedIn: true
+            isloggedIn:true
         })
     }
-    
-    handleLogOut(){
+    handleLogOutClick(){
         this.setState({
-            isLoggedIn: false
+            isloggedIn:false
         })
     }
     render() {
-        const isLoggedIn = this.state.isLoggedIn
-        let Button;
+        const isLoggedIn = this.state.isloggedIn;
+        let button;
         if(isLoggedIn){
-            Button = <LogoutButton onClick={this.handleLogOut}/>
+            button = <LogoutButton onClick={this.handleLogOutClick}/>
         }
-         else{
-             Button = <LoginButton onClick={this.handleLogIn} />
-         }
+        else{
+            button = <LogInButton onClick={this.handleLogInClick}/>
+        }
         return (
             <div>
-                <ConditionalRendering isLoggedIn = {isLoggedIn}/>
-                {Button}
+                <ConditionalRendering isloggedIn={isLoggedIn}/>
+                 {button}
             </div>
         )
     }
